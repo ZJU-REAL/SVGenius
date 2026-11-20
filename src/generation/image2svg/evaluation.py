@@ -254,7 +254,6 @@ async def process_samples_from_json_async(json_file: str, output_file: str, mode
 
     successful_samples = [r for r in all_results if "error" not in r]
     sample_count = len(successful_samples)
-    e
     fid_score = None
     if enable_fid and sample_count >= 2:
         logger.info("Starting FID score calculation...")
